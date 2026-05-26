@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café Central — Moderno · Local · Calidad</title>
+  <meta name="description" content="Cafetería moderna y local, café de comercio justo y cocina cuidada. Reserva tu mesa o pídelo a domicilio con Glovo.">
+
+  <link rel="icon" type="image/png" href="assets/img/logo.png">
+  <link rel="stylesheet" href="css/style.css?v=20260525">
+</head>
+<body>
+
+  <!-- =====================================================
+       NAV
+       ===================================================== -->
+  <nav class="nav" role="navigation" aria-label="Principal">
+    <a href="#top" class="nav-brand">Café Central</a>
+    <div class="nav-links">
+      <a href="#nosotros">Nosotros</a>
+      <a href="#reservas">Reservas</a>
+      <a href="#domicilio">A domicilio</a>
+      <a href="#calidad">Calidad</a>
+      <a href="#contacto">Visítanos</a>
+    </div>
+    <a href="#reservas" class="nav-cta">Reservar</a>
+  </nav>
+
+  <!-- =====================================================
+       HERO
+       ===================================================== -->
+  <header class="hero" id="top">
+    <div class="hero-inner">
+      <span class="hero-meta reveal"><span class="dot"></span>Abierto · Te esperamos hoy</span>
+
+      <picture class="reveal reveal-delay-1">
+        <source srcset="assets/img/logo.webp" type="image/webp">
+        <img src="assets/img/logo-transparent.png" alt="Café Central — moderno, local, calidad" class="hero-logo">
+      </picture>
+
+      <h1 class="reveal reveal-delay-2">Tu pausa <em>favorita</em> del día.</h1>
+
+      <p class="hero-sub reveal reveal-delay-3">
+        Café de origen, repostería del día y un espacio pensado para quedarte un rato más.
+        Reserva tu mesa o pídelo a casa cuando quieras.
+      </p>
+
+      <div class="hero-actions reveal reveal-delay-4">
+        <a href="#reservas" class="btn btn-primary">
+          Reservar mesa
+          <span class="arrow">→</span>
+        </a>
+        <a href="#domicilio" class="btn btn-ghost">
+          Pedir a domicilio
+        </a>
+      </div>
+
+      <div class="hero-tags reveal reveal-delay-4">
+        <span>Moderno</span>
+        <span>Local</span>
+        <span>Calidad</span>
+      </div>
+    </div>
+
+    <div class="scroll-hint">Descubre</div>
+  </header>
+
+  <!-- =====================================================
+       ABOUT
+       ===================================================== -->
+  <section class="about" id="nosotros">
+    <div class="wrap">
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <span class="kicker" style="margin-bottom: 18px; display:inline-flex;">Sobre nosotros</span>
+          <h2 class="h-xl">Un café que sabe a <em>barrio</em>.</h2>
+          <p>
+            Café Central nace como punto de encuentro: gente del barrio, una cafetera que nunca para
+            y la idea sencilla de hacer las cosas bien. Sin prisa, con cariño.
+          </p>
+          <p>
+            Trabajamos con proveedores locales, café de origen certificado y materia prima fresca
+            del día. Todo lo que servimos pasa por una sola pregunta: ¿lo serviríamos a nuestra familia?
+          </p>
+        </div>
+
+        <div class="about-stats">
+          <div class="stat-card reveal reveal-delay-1">
+            <div class="stat-num">100<em>%</em></div>
+            <div class="stat-label">Café de comercio justo</div>
+          </div>
+          <div class="stat-card reveal reveal-delay-2">
+            <div class="stat-num">+12</div>
+            <div class="stat-label">Proveedores locales</div>
+          </div>
+          <div class="stat-card reveal reveal-delay-3">
+            <div class="stat-num">07:30</div>
+            <div class="stat-label">Pan recién hecho cada día</div>
+          </div>
+          <div class="stat-card reveal reveal-delay-4">
+            <div class="stat-num">4,8<em>★</em></div>
+            <div class="stat-label">Valoración media de clientes</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       RESERVATION
+       ===================================================== -->
+  <section class="reservation" id="reservas">
+    <div class="wrap">
+      <div class="res-card reveal">
+        <div class="res-info">
+          <span class="kicker" style="margin-bottom: 16px; display:inline-flex;">Reservas</span>
+          <h2 class="h-xl">Guarda tu <em>mesa</em>.</h2>
+          <p>
+            Reserva en menos de un minuto. Recibirás confirmación al instante por WhatsApp o email.
+            Si tienes alguna preferencia, cuéntanos.
+          </p>
+          <ul class="res-perks">
+            <li>Confirmación inmediata</li>
+            <li>Sin coste de reserva</li>
+            <li>Hasta 15 minutos de cortesía</li>
+            <li>Cancela cuando quieras</li>
+          </ul>
+        </div>
+
+        <form class="res-form" id="resForm" novalidate>
+          <div class="field full">
+            <label for="r-name">Nombre</label>
+            <input type="text" id="r-name" name="name" required placeholder="Tu nombre">
+          </div>
+
+          <div class="field">
+            <label for="r-phone">Teléfono</label>
+            <input type="tel" id="r-phone" name="phone" required placeholder="600 000 000">
+          </div>
+
+          <div class="field">
+            <label for="r-people">Personas</label>
+            <select id="r-people" name="people" required>
+              <option value="1">1 persona</option>
+              <option value="2" selected>2 personas</option>
+              <option value="3">3 personas</option>
+              <option value="4">4 personas</option>
+              <option value="5">5 personas</option>
+              <option value="6">6 personas</option>
+              <option value="7+">7 o más</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="r-date">Fecha</label>
+            <input type="date" id="r-date" name="date" required>
+          </div>
+
+          <div class="field">
+            <label for="r-time">Hora</label>
+            <select id="r-time" name="time" required>
+              <option value="">Elige hora</option>
+              <option>08:00</option><option>08:30</option>
+              <option>09:00</option><option>09:30</option>
+              <option>10:00</option><option>10:30</option>
+              <option>11:00</option><option>11:30</option>
+              <option>12:00</option><option>12:30</option>
+              <option>13:00</option><option>13:30</option>
+              <option>14:00</option><option>14:30</option>
+              <option>17:00</option><option>17:30</option>
+              <option>18:00</option><option>18:30</option>
+              <option>19:00</option><option>19:30</option>
+              <option>20:00</option>
+            </select>
+          </div>
+
+          <button type="submit" class="res-submit">
+            Confirmar reserva
+            <span class="arrow">→</span>
+          </button>
+
+          <div class="res-success" id="resSuccess">
+            ✓ Reserva enviada. Te confirmamos en unos minutos.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       GLOVO DELIVERY
+       ===================================================== -->
+  <section class="delivery" id="domicilio">
+    <div class="wrap">
+      <div class="glovo-card reveal">
+        <div class="glovo-content">
+          <span class="glovo-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="m4.93 4.93 4.24 4.24"></path><path d="m14.83 9.17 4.24-4.24"></path><path d="m14.83 14.83 4.24 4.24"></path><path d="m9.17 14.83-4.24 4.24"></path><circle cx="12" cy="12" r="4"></circle></svg>
+            Disponible ahora
+          </span>
+          <h2>Llévatelo a <em>casa</em> con Glovo.</h2>
+          <p>
+            Pide lo que quieras de nuestra carta y te lo llevamos calentito.
+            Café, repostería y comidas completas, en minutos.
+          </p>
+
+          <div class="glovo-features">
+            <div class="glovo-feature">
+              <span class="glovo-feature-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1a1410" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              </span>
+              Entrega ~25 min
+            </div>
+            <div class="glovo-feature">
+              <span class="glovo-feature-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1a1410" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7h-9"></path><path d="M14 17H5"></path><circle cx="17" cy="17" r="3"></circle><circle cx="7" cy="7" r="3"></circle></svg>
+              </span>
+              Carta completa
+            </div>
+            <div class="glovo-feature">
+              <span class="glovo-feature-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1a1410" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </span>
+              Pago seguro
+            </div>
+          </div>
+
+          <a href="https://glovoapp.com" target="_blank" rel="noopener" class="btn btn-glovo">
+            Pedir en Glovo
+            <span class="arrow">→</span>
+          </a>
+        </div>
+
+        <div class="glovo-visual">
+          <div class="glovo-bubble">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+              <!-- Cup illustration -->
+              <defs>
+                <linearGradient id="steam" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="#8b5a2b" stop-opacity="0.5"/>
+                  <stop offset="100%" stop-color="#8b5a2b" stop-opacity="0"/>
+                </linearGradient>
+              </defs>
+              <!-- Steam -->
+              <path d="M 35 18 Q 32 12 35 6" stroke="url(#steam)" stroke-width="2" fill="none" stroke-linecap="round">
+                <animateTransform attributeName="transform" type="translate" values="0 0; 0 -4; 0 0" dur="3s" repeatCount="indefinite"/>
+              </path>
+              <path d="M 50 16 Q 47 10 50 4" stroke="url(#steam)" stroke-width="2" fill="none" stroke-linecap="round">
+                <animateTransform attributeName="transform" type="translate" values="0 0; 0 -5; 0 0" dur="3.5s" repeatCount="indefinite"/>
+              </path>
+              <path d="M 65 18 Q 62 12 65 6" stroke="url(#steam)" stroke-width="2" fill="none" stroke-linecap="round">
+                <animateTransform attributeName="transform" type="translate" values="0 0; 0 -3; 0 0" dur="2.8s" repeatCount="indefinite"/>
+              </path>
+              <!-- Cup body -->
+              <path d="M 25 30 L 30 80 Q 30 88 38 88 L 60 88 Q 68 88 68 80 L 73 30 Z"
+                    fill="#6b4423" stroke="#3d2814" stroke-width="2.5"/>
+              <!-- Coffee surface -->
+              <ellipse cx="49" cy="32" rx="22" ry="4" fill="#3d2814"/>
+              <!-- Handle -->
+              <path d="M 73 45 Q 88 45 88 60 Q 88 75 73 75" stroke="#3d2814" stroke-width="3" fill="none" stroke-linecap="round"/>
+              <!-- Saucer -->
+              <ellipse cx="49" cy="90" rx="34" ry="4" fill="#3d2814" opacity="0.2"/>
+            </svg>
+            <span class="glovo-bubble-text">¡A tu puerta!</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       CERTIFICACIONES / CALIDAD
+       ===================================================== -->
+  <section class="certifications" id="calidad">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="kicker">Calidad certificada</span>
+        <h2 class="h-xl">Lo que servimos, <em>respaldado</em>.</h2>
+        <p class="lead">
+          No basta con decir que las cosas se hacen bien: lo demostramos con certificaciones reconocidas
+          internacionalmente que garantizan cada paso, desde el grano hasta tu taza.
+        </p>
+      </div>
+
+      <div class="cert-grid">
+        <article class="cert-card reveal reveal-delay-1">
+          <div class="cert-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2 L4 7 v5 c0 5 3.5 9 8 10 4.5 -1 8 -5 8 -10 V7 Z"/>
+              <path d="m9 12 2 2 4-4"/>
+            </svg>
+          </div>
+          <span class="cert-tag">Comercio justo</span>
+          <h3 class="cert-name">Fairtrade</h3>
+          <p class="cert-desc">
+            Garantiza que el café se compra a productores de origen en condiciones justas,
+            con un precio mínimo que protege a las comunidades cafetaleras.
+          </p>
+        </article>
+
+        <article class="cert-card reveal reveal-delay-2">
+          <div class="cert-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="9"/>
+              <path d="M3.6 9h16.8M3.6 15h16.8M12 3a13 13 0 0 1 0 18M12 3a13 13 0 0 0 0 18"/>
+            </svg>
+          </div>
+          <span class="cert-tag">Gestión ambiental</span>
+          <h3 class="cert-name">ISO 14001</h3>
+          <p class="cert-desc">
+            Acredita que tenemos un sistema activo de gestión ambiental: medimos
+            nuestro impacto, lo controlamos y trabajamos para reducirlo cada año.
+          </p>
+        </article>
+
+        <article class="cert-card reveal reveal-delay-3">
+          <div class="cert-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="8" r="6"/>
+              <path d="M9 13.6V21l3-1.5L15 21v-7.4"/>
+              <path d="M9 8h6M12 5v6"/>
+            </svg>
+          </div>
+          <span class="cert-tag">Impacto social</span>
+          <h3 class="cert-name">B Corp</h3>
+          <p class="cert-desc">
+            Distingue a las empresas que equilibran beneficio económico con un impacto
+            social y ambiental positivo. Una manera transparente de hacer negocio.
+          </p>
+        </article>
+      </div>
+
+      <div class="trust-row">
+        <div class="trust-item reveal">
+          <div class="trust-num">100%</div>
+          <div class="trust-label">Origen trazable</div>
+        </div>
+        <div class="trust-item reveal reveal-delay-1">
+          <div class="trust-num">0</div>
+          <div class="trust-label">Plástico de un solo uso</div>
+        </div>
+        <div class="trust-item reveal reveal-delay-2">
+          <div class="trust-num">A+</div>
+          <div class="trust-label">Higiene sanitaria</div>
+        </div>
+        <div class="trust-item reveal reveal-delay-3">
+          <div class="trust-num">+5 años</div>
+          <div class="trust-label">En el barrio</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       LOCATION
+       ===================================================== -->
+  <section class="location" id="contacto">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="kicker">Visítanos</span>
+        <h2 class="h-xl">Te esperamos <em>aquí</em>.</h2>
+      </div>
+
+      <div class="loc-grid">
+        <div class="loc-info reveal">
+          <h3 class="h-md">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            Dónde estamos
+          </h3>
+          <address>
+            Calle del Café, 12<br>
+            04001 Almería<br>
+            <a href="https://maps.google.com/?q=Café+Central+Almería" target="_blank" rel="noopener">Ver en Google Maps →</a>
+          </address>
+
+          <div class="contact-row">
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <a href="tel:+34950000000">+34 950 00 00 00</a>
+            </div>
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:hola@cafecentral.es">hola@cafecentral.es</a>
+            </div>
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+              <a href="https://wa.me/34600000000" target="_blank" rel="noopener">WhatsApp directo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="loc-hours reveal reveal-delay-1">
+          <h3 class="h-md">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            Horarios
+          </h3>
+          <ul class="hours-list" id="hoursList">
+            <li data-day="1"><span class="hours-day">Lunes</span><span class="hours-time">07:30 — 21:00</span></li>
+            <li data-day="2"><span class="hours-day">Martes</span><span class="hours-time">07:30 — 21:00</span></li>
+            <li data-day="3"><span class="hours-day">Miércoles</span><span class="hours-time">07:30 — 21:00</span></li>
+            <li data-day="4"><span class="hours-day">Jueves</span><span class="hours-time">07:30 — 21:00</span></li>
+            <li data-day="5"><span class="hours-day">Viernes</span><span class="hours-time">07:30 — 23:00</span></li>
+            <li data-day="6"><span class="hours-day">Sábado</span><span class="hours-time">08:30 — 23:00</span></li>
+            <li data-day="0"><span class="hours-day">Domingo</span><span class="hours-time">09:00 — 17:00</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       FOOTER
+       ===================================================== -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/img/logo-transparent.png" alt="Café Central">
+          <p>Moderno, local y de calidad. Un espacio cuidado en cada detalle para que vuelvas siempre.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#reservas">Reservas</a></li>
+            <li><a href="#domicilio">Pedidos a domicilio</a></li>
+            <li><a href="#calidad">Calidad</a></li>
+            <li><a href="#contacto">Visítanos</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <ul>
+            <li><a href="tel:+34950000000">+34 950 00 00 00</a></li>
+            <li><a href="mailto:hola@cafecentral.es">hola@cafecentral.es</a></li>
+            <li><a href="https://wa.me/34600000000" target="_blank" rel="noopener">WhatsApp</a></li>
+            <li><a href="https://glovoapp.com" target="_blank" rel="noopener">Pedir en Glovo</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Café Central · Todos los derechos reservados</span>
+        <span>Hecho con cariño en Almería ☕</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js?v=20260525" defer></script>
+</body>
+</html>
